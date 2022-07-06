@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      p {
+        color: black;
+      }
+
+      #first {
+        color: blue;
+        font-weight: bold;
+      }
+      /* the rules that are defined in embedded stylesheet override the rules in an external stylesheet */
+    </style>
+    <!-- <style>
+      p {
+        color: orange;
+      }
+      /* this is an embedded stylesheets there are 2 problem with this stylesheet the first one is that they are not scalable so if you have multiple pages it is likely that on other pages we want our paragrahps to be orange with this approach we have to copy all the styles that we have here and put them on every single webpage the second problem with this approach is that it violates a very important principle in computer science called separation of concerns so we want to have different modules for different concerns  */
+    </style> -->
+  </head>
+  <body>
+    <p id="first" style="color: blue; font-weight: bold">
+      Lorem ipsum dolor sit amet.
+    </p>
+    <!-- the rules that are defined in inline stylesheets overrite both rules on embedded and external stylesheet -->
+    <!-- the inline styles are pretty ugly u should avoid them as much as u can because they violate the separation of concern -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- There are thre ways that we can provide styles embedded stylesheets we include styles in html documents external stylesheets we can write our styles in seperate files it has a couple of benefits we can use also inline styles wecan apply a style directly to a particular html element -->
+  </body>
+</html>
