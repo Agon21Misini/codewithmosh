@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid gray;
+        border-collapse: collapse; /* this will collapse the borders */
+        /* border: thickness style color */
+        padding: 5px;
+      }
+
+      tfoot {
+        text-align-last: left;
+      }
+      /* to desing 2 or more tags with the same styles we can use tagname, anothertagname for example table, tr */
+      /* DRY - Don't Repeat Yourself */
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+          <!-- colspan - column span it determines how many columns this cell should expand to the default value is 1 -->
+        </tr>
+        <tr>
+          <th>Category</th>
+          <!-- th table header cell -->
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- tr - table row -->
+          <td>
+            Marketing
+            <!-- td - table data cell -->
+          </td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$300</th>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- table element rebresents some tabular data, in the past we used this element for laying out pages but these days that's a bad practice because we have other ways for creating layouts-->
+    <!--in header cells by default the text is bold and aligned in the center  -->
+  </body>
+</html>
