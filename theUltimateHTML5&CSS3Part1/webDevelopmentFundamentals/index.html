@@ -4,6 +4,21 @@
   <head>
     <!-- we use head to give browser information about this page -->
     <title>My first web page</title>
+    <style>
+      /* here we write the css code */
+      img {
+        width: 100px;
+        /* border-radius: 10px; */
+        border-radius: 50px; /* if u give the border radius half of the size of the width it will bi a circle border */
+        float: left;
+        margin-right: 10px;
+      }
+
+      .username {
+        /* class selector should be with a . and the class name - .username */
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <!-- inside the body element, we are going to add elements that will apear on our page  -->
@@ -11,7 +26,8 @@
     <img
       src="../images/mosh.jpg"
     /><!-- src element: speify a path or an image - alt = alternative text alt element: give the browser some text to display in case the image cannot be displayed -->
-    <p>@moshhamedani</p>
+    <!-- if you want to style only one paragraph you have to separate them by giving a paragraph a class -->
+    <p class="username">@moshhamedani</p>
     <p>I love to teach you HTML</p>
     <!-- image element cannot have any child element that is the reason that img does not have a closing tag only an opening tag -->
   </body>
