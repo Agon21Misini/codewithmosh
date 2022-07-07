@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  background-color: black;
+  padding: 7px;
+}
+
+a {
+  color: #e0e0e9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+li {
+  margin: 5px 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  li {
+    margin: 0 10px;
+  }
+}
