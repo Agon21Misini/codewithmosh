@@ -1,0 +1,21 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 200px;
+    /* width: 600px; */
+    height: 200px;
+    background: dodgerblue;
+    /* border: 10px solid royalblue; */
+    /* border: 10px dotted royalblue; */
+    /* border-top: 20px solid royalblue; */
+    border: 10px dashed royalblue;
+    /* border-width: 10px 20px 10px 20px; top right bottom left */
+    /* border-width: 10px 20px 10px; */
+    /* border-width: 10px 20px; */
+    /* border-width: 10px; */
+    /* border-top: 20px solid royalblue; */
+    /* border-radius: 10px; */
+    border-radius: 100%;
+}
