@@ -1,0 +1,21 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    /* width: 200px; */
+    width: 600px;
+    height: 200px;
+    /* background: linear-gradient(dodgerblue, yellow); */
+    /* background: linear-gradient(to right, dodgerblue, yellow); */
+    /* background: linear-gradient(to bottom right, dodgerblue, yellow); */
+    /* background: linear-gradient(45deg, dodgerblue, yellow); */
+    /* background: linear-gradient(45deg, dodgerblue, yellow 30%); */
+    /* background: linear-gradient(45deg, dodgerblue, yellow 90%); */
+    /* background: linear-gradient(45deg, dodgerblue, yellow, tomato); */
+    /* background: radial-gradient(white, yellow); */
+    /* background: radial-gradient(circle, white, yellow); */
+    /* background: radial-gradient(circle at top left, white, yellow); */
+    background: rgb(115, 107, 231);
+    background: linear-gradient(32deg, rgba(115, 107, 231, 1) 0%, rgba(255, 107, 21, 1) 91%);
+}
