@@ -1,0 +1,42 @@
+body {
+  margin: 10px;
+  height: 200vh;
+}
+
+.boxes {
+  border: 3px solid lightgrey;
+  position: relative;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one {
+  background-color: gold;
+}
+
+.box-two {
+  background-color: tomato;
+  /* position: relative; */
+  /* position: absolute; */
+  position: fixed;
+  /* right: 0; */
+  /* bottom: 0; */
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
+  /* left: 5rem; */
+  /* left: -4rem; */
+  /* right: 4rem; */
+  /* left: 4rem; */
+  /* bottom: 4rem; */
+  /* z-index: -1; */
+  z-index: 1;
+}
+
+.box-three {
+  background-color: dodgerblue;
+}
