@@ -1,0 +1,19 @@
+body {
+    margin: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: coral;
+    /* first value positive to the right negative to the left the second value positive down negative up third value soften or blur fourth value color */
+    /* box-shadow: 10px;  */
+    /* box-shadow: -10px;  */
+    /* box-shadow: 10px 10px 30px grey; */
+    box-shadow: 0 0 30px grey;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* this blends with all background colors */
+}
