@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #222;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.lead {
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-size: 2.7rem;
+}
+
+ul li {
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+}
