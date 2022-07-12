@@ -25,6 +25,9 @@ body {
   width: 100px;
   height: 100px;
   background: gold;
+}
+
+.animation-pop {
   animation-name: pop;
   animation-duration: 4s;
   animation-delay: 1s;
