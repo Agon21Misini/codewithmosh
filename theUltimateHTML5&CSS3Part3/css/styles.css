@@ -52,7 +52,7 @@ p {
   margin-top: 0;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
   }
@@ -92,7 +92,7 @@ a {
   margin-left: 10px;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
   }
@@ -122,7 +122,7 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -153,7 +153,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
   }
@@ -253,7 +253,7 @@ a {
   display: inline-block;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
   }
@@ -289,7 +289,7 @@ a {
   margin: 4px;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
   }
@@ -363,7 +363,7 @@ a {
   right: 5%;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
   }
@@ -431,7 +431,7 @@ a {
   bottom: 10px;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
   }
@@ -450,13 +450,13 @@ a {
   display: grid;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -482,7 +482,7 @@ a {
   right: -32px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .testimonial__image {
     margin: 0;
   }
@@ -524,7 +524,7 @@ a {
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
@@ -537,4 +537,36 @@ a {
     justify-self: start;
     margin: 0 2rem;
   }
+}
+
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
