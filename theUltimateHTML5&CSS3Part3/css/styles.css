@@ -4,16 +4,16 @@ html {
 }
 
 :root {
+  --color-accent: #ff3400;
+  --color-body: #918ca4;
+  --color-headings: #1b0760;
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #ff3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
 }
 
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
 }
@@ -66,9 +66,9 @@ a {
 
 .link-arrow {
   color: var(--color-accent);
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .link-arrow::after {
@@ -84,5 +84,38 @@ a {
 @media (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
