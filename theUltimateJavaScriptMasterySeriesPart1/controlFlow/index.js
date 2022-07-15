@@ -1,13 +1,23 @@
-// let i = 0;
-// while (i < 5) {
-//   console.log(i);
-// }
+// for
+// while
+// do-while
 
-// while(true){}
+// for-in
+const person = {
+  name: "Agon",
+  age: 22,
+};
 
-// let x = 0
-// do {
-//     // x++
-// } while (x < 5)
+for (let key in person) {
+  console.log(key, person[key]);
+}
 
-// for (let i = 0; i < 5; ) {}
+// Dot notation
+// person.name
+
+// Bracket Notation
+// person['name']
+let colors = ["red", "green", "blue"];
+for (let index in colors) {
+  console.log(index, colors[index]);
+}
