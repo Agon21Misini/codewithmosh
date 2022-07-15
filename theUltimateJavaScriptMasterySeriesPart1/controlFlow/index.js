@@ -1,11 +1,5 @@
-let i = 0;
-while (i <= 10) {
-  //   if (i === 5) break;
-  if (i % 2 === 0) {
-    i++;
-    continue;
-  }
-
-  console.log(i);
-  i++;
+let number = maximum(5, 1);
+console.log(number);
+function maximum(a, b) {
+  return a > b ? a : b;
 }
