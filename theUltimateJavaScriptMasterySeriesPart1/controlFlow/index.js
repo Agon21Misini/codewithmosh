@@ -1,10 +1,10 @@
-function showNumbers(limit) {
-  for (let i = 0; i <= limit; i++) {
-    const message = i % 2 === 0 ? "EVEN" : "ODD";
-    console.log(i, message);
-    // if (i % 2 === 0) console.log(i, "EVEN");
-    // else console.log(i, "ODD");
-  }
-}
+const array = [0, null, undefined, "", 2, 3];
+console.log(countTruthy(array));
 
-showNumbers(20);
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array) {
+    if (value) count++;
+  }
+  return count;
+}
