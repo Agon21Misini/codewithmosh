@@ -1,17 +1,6 @@
-// let role;
-// let role = "guest";
-let role = "moderator";
-switch (role) {
-  case "guest":
-    console.log("Guest User");
-    break;
-  case "moderator":
-    console.log("Moderator User");
-    break;
-  default:
-    console.log("Unknown User");
+// for (let i = 0; i <= 5; i++) {
+//   if (i % 2 !== 0) console.log(i);
+// }
+for (let i = 5; i >= 1; i++) {
+  if (i % 2 !== 0) console.log(i);
 }
-
-if (role === "guest") console.log("Guest User");
-else if (role === "moderator") console.log("Moderator User");
-else console.log("Unknown User");
