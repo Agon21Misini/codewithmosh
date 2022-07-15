@@ -1,21 +1,13 @@
-const output = fizzBuzz(11);
-console.log(output);
-function fizzBuzz(input) {
-  let dividedBy3 = input % 3 === 0;
-  let dividedBy5 = input % 5 === 0;
-  let dividedByBoth = dividedBy3 && dividedBy5;
-  if (typeof input !== "number") {
-    return "Not a number";
-  }
-  if (dividedByBoth) {
-    return "FizzBuzz";
-  }
-  if (dividedBy3) {
-    return "Fizz";
-  }
-  if (dividedBy5) {
-    return "Buzz";
-  }
+checkSpeed(130);
 
-  return input;
+function checkSpeed(speed) {
+  const speedLimit = 70;
+  const kmPerPoint = 5;
+  if (speed <= speedLimit + kmPerPoint) {
+    console.log("OK");
+    return;
+  }
+  const points = Math.floor((speed - speedLimit) / kmPerPoint);
+  if (points >= 12) console.log("License suspended");
+  else console.log("Points", points);
 }
