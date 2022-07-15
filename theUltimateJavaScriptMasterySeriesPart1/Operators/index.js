@@ -1,19 +1,10 @@
 let x = 10;
-let y = 3;
 
-// console.log(x + y);
-// console.log(x - y);
-// console.log(x * y);
-// console.log(x / y);
-// console.log(x % y);
-// console.log(x ** y);
+// x++;
+// x = x + 1;
 
-// Increment
-// console.log(++x);
-// console.log(x++);
-// console.log(x);
+x = x + 5;
+x += 5;
 
-// Decrement
-// console.log(--x);
-// console.log(x--);
-// console.log(x);
+x = x * 3;
+x *= 3;
